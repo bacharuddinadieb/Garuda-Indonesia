@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="departure">
+        <item>Jakarta</item>
+        <item>Surabaya</item>
+        <item>Denpasar</item>
+        <item>Makassar</item>
+        <item>Malang</item>
+        <item>Dubai</item>
+        <item>Singapore</item>
+        <item>Kuala Lumpur</item>
+        <item>Tokyo</item>
+        <item>Osaka</item>
+        <item>Sydney</item>
+        <item>Los Angles</item>
+        <item>London</item>
+        <item>Amsterdam</item>
+        <item>Moscow</item>
+        <item>Berlin</item>
+        <item>Paris</item>
+        <item>Beijing</item>
+    </string-array>
+</resources>
