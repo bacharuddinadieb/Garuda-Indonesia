@@ -2,11 +2,13 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="false">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#feffffff"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
@@ -63,14 +65,14 @@
             android:inputType="date" />
 
         <Spinner
-            android:id="@+id/sdeparture"
+            android:id="@+id/spinnerdeparture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/textView3"
             android:entries="@array/departure"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dialog" />
 
         <TextView
             android:id="@+id/textView3"
@@ -87,18 +89,18 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/sdeparture"
+            android:layout_below="@+id/spinnerdeparture"
             android:text="Arrival" />
 
         <Spinner
-            android:id="@+id/sarrival"
+            android:id="@+id/spinnerarrival"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/textView4"
             android:entries="@array/departure"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dialog" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -109,28 +111,28 @@
             android:layout_below="@+id/textView5">
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/reco"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Economy Class" />
 
             <RadioButton
-                android:id="@+id/radioButton4"
+                android:id="@+id/recopre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Economy Premium Class" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/rbus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Business Class" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/rfirst"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
@@ -155,28 +157,28 @@
             android:layout_below="@+id/textView6">
 
             <CheckBox
-                android:id="@+id/checkBox5"
+                android:id="@+id/chkind"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Indonesian Meal" />
 
             <CheckBox
-                android:id="@+id/checkBox6"
+                android:id="@+id/chkwest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Western Meal" />
 
             <CheckBox
-                android:id="@+id/checkBox7"
+                android:id="@+id/chkjpn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Japannese Meal" />
 
             <CheckBox
-                android:id="@+id/checkBox8"
+                android:id="@+id/chkmid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
@@ -189,15 +191,15 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/sarrival"
+            android:layout_below="@+id/spinnerarrival"
             android:text="On Board Meal" />
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView8"
+            android:layout_below="@+id/detail"
             android:layout_marginTop="27dp">
 
             <TextView
@@ -218,14 +220,13 @@
             android:text="Order Now" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/button"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal|top"
             android:layout_marginTop="47dp"
-            android:text="Detail Pemesanan Tiket"
             android:textSize="20dp" />
 
     </RelativeLayout>
