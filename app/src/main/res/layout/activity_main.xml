@@ -32,7 +32,8 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/imageView"
             android:layout_marginTop="48dp"
-            android:text="Name" />
+            android:text="Name"
+            android:textSize="22dp" />
 
         <EditText
             android:id="@+id/nama"
@@ -42,7 +43,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView" />
+            android:layout_below="@+id/textView"
+            android:hint="Nama Anda" />
 
         <TextView
             android:id="@+id/textView2"
@@ -51,8 +53,9 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/nama"
-            android:layout_marginTop="5dp"
-            android:text="Date" />
+            android:layout_marginTop="15dp"
+            android:text="Date"
+            android:textSize="22dp" />
 
         <EditText
             android:id="@+id/date"
@@ -62,6 +65,7 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/textView2"
             android:ems="10"
+            android:hint="DD/MM/YYYY"
             android:inputType="date" />
 
         <Spinner
@@ -81,7 +85,9 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/date"
-            android:text="Departure" />
+            android:layout_marginTop="15dp"
+            android:text="Departure"
+            android:textSize="22dp" />
 
         <TextView
             android:id="@+id/textView4"
@@ -90,7 +96,9 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/spinnerdeparture"
-            android:text="Arrival" />
+            android:layout_marginTop="15dp"
+            android:text="Arrival"
+            android:textSize="22dp" />
 
         <Spinner
             android:id="@+id/spinnerarrival"
@@ -146,7 +154,9 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/radioGroup2"
-            android:text="Flight Class" />
+            android:layout_marginTop="15dp"
+            android:text="Flight Class"
+            android:textSize="22dp" />
 
         <RadioGroup
             android:id="@+id/radioGroup2"
@@ -182,7 +192,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text=" Middle Eastern Meal" />
+                android:text="Middle Eastern Meal" />
         </RadioGroup>
 
         <TextView
@@ -192,7 +202,9 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/spinnerarrival"
-            android:text="On Board Meal" />
+            android:layout_marginTop="15dp"
+            android:text="On Board Meal"
+            android:textSize="22dp" />
 
         <FrameLayout
             android:layout_width="match_parent"
